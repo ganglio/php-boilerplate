@@ -1,0 +1,30 @@
+{
+    "name": "<package id here>",
+    "type": "library",
+    "description": "<decription here>",
+    "keywords": ["<keywords here>"],
+    "homepage": "http://www.github.com/<package id here>",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "<your name>",
+            "email": "<your email>"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "<project namespace>": "src",
+            "<tests namespace>": "test/src"
+        },
+        "classmap" : [
+            "src",
+            "test/src"
+        ]
+    },
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*"
+    }
+}
